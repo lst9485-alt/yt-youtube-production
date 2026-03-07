@@ -1,0 +1,43 @@
+{
+  "name": "codex-smart-paste",
+  "displayName": "Codex Smart Paste",
+  "description": "Turn image clipboard contents into file paths when pasting into the VS Code terminal.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:codexSmartPaste.pasteToTerminal"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codexSmartPaste.pasteToTerminal",
+        "title": "Codex Smart Paste: Paste Into Terminal"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codexSmartPaste.pasteToTerminal",
+        "key": "cmd+v",
+        "mac": "cmd+v",
+        "when": "terminalFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Codex Smart Paste",
+      "properties": {
+        "codexSmartPaste.tempDir": {
+          "type": "string",
+          "default": "/tmp/codex-paste-images",
+          "description": "Directory used for clipboard images pasted into the terminal."
+        }
+      }
+    }
+  }
+}
