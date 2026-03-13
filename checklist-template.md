@@ -16,7 +16,7 @@
 | [ ] | yt04-intro 도입부 작성 | |
 | [ ] | yt05-manuscript 원고 작성 | |
 | [ ] | yt06-revision 원고 수정 | |
-| [ ] | yt07-ppt PPT 제작 | |
+| [ ] | yt07-slide 슬라이드 제작 | |
 | [ ] | yt08-subtitle 자막 교정 | |
 | [ ] | 편집 (수동) | |
 | [ ] | yt09-upload 업로드 | |
@@ -135,7 +135,7 @@
 
 ---
 
-## 촬영 전 ← yt07-ppt
+## 촬영 전 ← yt07-slide
 
 스킬 진행:
 - [ ] STEP 1: 원고 구조 파악
